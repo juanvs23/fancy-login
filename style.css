@@ -49,7 +49,29 @@ section#body {
   transition: 1s;
   animation: myAnim 4s linear 0s infinite normal forwards;
 }
-
+footer.footer {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+footer.footer p {
+  font-size: 0.8rem;
+  filter: drop-shadow(3px 2px 3px black);
+}
+footer.footer p a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer.footer p a:hover {
+  color: #ff9b8f;
+}
 #form-container {
   position: relative;
   width: 90%;
@@ -259,4 +281,7 @@ button.submit-button:hover {
 }
 .register-active form#login {
   left: -450px;
+}
+.register-active footer.footer p a:hover {
+  color: #87e1ff;
 }
