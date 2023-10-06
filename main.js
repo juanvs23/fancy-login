@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             if (!document.body.classList.contains('register-active')) {
                 document.body.classList.add('register-active');
+                document.title= 'Register | Fancy login';
             }else{
                 document.body.classList.remove('register-active');
+                document.title= 'Login | Fancy login';
             }
         });
     })
